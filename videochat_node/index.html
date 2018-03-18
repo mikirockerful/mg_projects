@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Servicio de videochat del grupo 34 de IRAC</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<h2 align="center">Welcome to IRAC34 Videochat</h2>
+
+<div id='mainDiv'>
+
+	<table border="1" width="100%">
+		<tr>
+			<th>
+				Local video
+			</th>
+			<th>
+				'Remote' video
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<video id="localVideo" muted autoplay style="width: 50%;margin-left: auto;margin-right: auto;display: block"></video>
+			</td>
+			<td>
+				<video id="remoteVideo" style="width: 50%;margin-left: auto;margin-right: auto;display: block"></video>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div id='secondaryDiv' style="margin-top:20px">
+<table border="1" width="30%" align="center">
+	<tr>
+		<td>
+		<textarea rows="2" cols="30" id="dataChannelSend" disabledplaceholder="This will be enabled once the data channel is up..." style="width: 50%;margin-left: auto;margin-right:auto;display: block"></textarea>
+</td>
+</tr>
+<tr>
+	<td>
+		<div text-align="center">
+<button id="sendButton" disabled style="margin:auto; display:block">Send</button>
+</div>
+</td>
+</tr>
+<tr>
+	<td>
+<div align="center" id="chatArea" style="display: inline; width: 100%; word-break: break-all; word-wrap: break-word;"></div>
+</td>
+</tr>
+</table>
+</div>
+
+<script src='/socket.io/socket.io.js'></script>
+<script src='js/lib/adapter.js'></script>
+<script src='js/completeNodeClientWithDataChannel.js'></script>
+
+</body>
+</html>
