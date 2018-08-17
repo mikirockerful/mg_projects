@@ -28,8 +28,8 @@ rotate(-90);
 
 
 var color1=color(255,200,123);
-var color2=color(100,100,255);
-var color3=color(200,80,150);
+var color2=color(100,200,155);
+var color3=color(100,80,150);
 
 
 
