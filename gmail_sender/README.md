@@ -45,3 +45,11 @@ python send_mail.py --to example@gmail.com --subject "Flying octopus sending mai
 
 The first time it runs, a pop-up browser will appear to log in to your Gmail account and allow access for the application.
 After the first successful login, the following interactions will not require human intervention, as the access token is downloaded and saved in a file called "token.pickle".
+
+It can also be called from other Python scripts this way:
+
+```python
+import send_gmail
+
+send_gmail.main('example@gmail.com' , 'Flying octopus sending mail', 'Email from a Python script')
+```
