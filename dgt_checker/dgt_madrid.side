@@ -1,0 +1,136 @@
+{
+  "id": "e2a60bd9-d5e7-4eee-90e4-f0b7f4995385",
+  "version": "2.0",
+  "name": "dgt_granada",
+  "url": "https://sedeapl.dgt.gob.es",
+  "tests": [{
+    "id": "b2034f13-cc3d-43c6-9552-b7194002d6cf",
+    "name": "dtg_granada",
+    "commands": [{
+      "id": "81624329-cf8d-46c1-9596-db577344d83d",
+      "comment": "",
+      "command": "open",
+      "target": "/WEB_NCIT_CONSULTA/solicitarCita.faces",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4972c975-e14c-4800-831b-83dd10a80952",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "214e4460-c7f7-422e-b311-66d735d1653a",
+      "comment": "",
+      "command": "click",
+      "target": "id=publicacionesForm:oficina",
+      "targets": [
+        ["id=publicacionesForm:oficina", "id"],
+        ["name=publicacionesForm:oficina", "name"],
+        ["css=#publicacionesForm\\3Aoficina", "css:finder"],
+        ["xpath=//select[@id='publicacionesForm:oficina']", "xpath:attributes"],
+        ["xpath=//div[@id='publicacionesForm:j_id41']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a283cf9c-ec1f-466b-ac02-64307fe33289",
+      "comment": "",
+      "command": "select",
+      "target": "id=publicacionesForm:oficina",
+      "targets": [],
+      "value": "label=Madrid"
+    }, {
+      "id": "85c13a8a-8a93-45e1-b62b-54049b6445bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=optgroup:nth-child(11) > option:nth-child(1)",
+      "targets": [
+        ["css=optgroup:nth-child(6) > option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='34']", "xpath:attributes"],
+        ["xpath=//select[@id='publicacionesForm:oficina']/optgroup[5]/option[3]", "xpath:idRelative"],
+        ["xpath=//optgroup[5]/option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Granada')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb2bd3ad-1e11-4742-a4b8-1102c27d106c",
+      "comment": "",
+      "command": "click",
+      "target": "id=publicacionesForm:tipoTramite",
+      "targets": [
+        ["id=publicacionesForm:tipoTramite", "id"],
+        ["name=publicacionesForm:tipoTramite", "name"],
+        ["css=#publicacionesForm\\3AtipoTramite", "css:finder"],
+        ["xpath=//select[@id='publicacionesForm:tipoTramite']", "xpath:attributes"],
+        ["xpath=//div[@id='publicacionesForm:j_id47']/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b66b7904-281e-498d-8416-1c7773ef5bfd",
+      "comment": "",
+      "command": "select",
+      "target": "id=publicacionesForm:tipoTramite",
+      "targets": [],
+      "value": "label=Trámites de oficina"
+    }, {
+      "id": "2bf25e86-5205-403e-980c-87b9aca23eaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#publicacionesForm\\3AtipoTramite > option:nth-child(2)",
+      "targets": [
+        ["css=#publicacionesForm\\3AtipoTramite > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='1'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='publicacionesForm:tipoTramite']/option[2]", "xpath:idRelative"],
+        ["xpath=//select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Trámites de oficina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3048f6d9-6a2b-401a-8dd3-0c219202e99c",
+      "comment": "",
+      "command": "click",
+      "target": "name=publicacionesForm:j_id69",
+      "targets": [
+        ["name=publicacionesForm:j_id69", "name"],
+        ["css=.botonSINimgen", "css:finder"],
+        ["xpath=//input[@name='publicacionesForm:j_id69']", "xpath:attributes"],
+        ["xpath=//div[@id='publicacionesForm:j_id68']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e82955be-dddb-461a-9046-cf223752e245",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "id=publicacionesForm:area:0:j_id115",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ad63499-7237-4f77-b759-879d58405b34",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=publicacionesForm:area:0:j_id112",
+      "targets": [
+        ["name=publicacionesForm:area:0:j_id112", "name"],
+        ["css=#publicacionesForm\\3A area\\3A 0\\3Aj_id111 > .botonSINimgen", "css:finder"],
+        ["xpath=//input[@name='publicacionesForm:area:0:j_id112']", "xpath:attributes"],
+        ["xpath=//span[@id='publicacionesForm:area:0:j_id111']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fc38ca8d-3dec-4019-b33d-fdb3e708cb35",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b2034f13-cc3d-43c6-9552-b7194002d6cf"]
+  }],
+  "urls": ["https://sedeapl.dgt.gob.es/"],
+  "plugins": []
+}
