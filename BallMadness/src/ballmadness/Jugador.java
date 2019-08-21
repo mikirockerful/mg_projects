@@ -162,7 +162,7 @@ public class Jugador {
 	public void centrar(){
 		this.x=48+128*this.factor-this.imagen.getWidth(null);
 	}
-	public boolean colisionbolas(ArrayList<Bolagrande> listabolas){//Habrá que ver si colisionamos o no
+	public boolean colisionbolas(ArrayList<Bolagrande> listabolas){//Habra que ver si colisionamos o no
 		for (int i=0;i<listabolas.size();i++){
 			Rectangle rect1=new Rectangle (this.x,this.y,imagen.getWidth(null),imagen.getHeight(null));
 			Rectangle rect2=new Rectangle (listabolas.get(i).getx(),listabolas.get(i).gety(),listabolas.get(i).getancho(),listabolas.get(i).getalto());
@@ -183,67 +183,67 @@ public class Jugador {
 	}
 	public void cargarimagenes(){
 		
-		this.icono=new ImageIcon("resources/disparando2s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/disparando2s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.quieto=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/disparando3s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/disparando3s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.disparando=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/andando1s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/andando1s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.andando1=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/andando2s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/andando2s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.andando2=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/andando3s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/andando3s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.andando3=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/andando4s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/andando4s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.andando4=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/andando5s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/andando5s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.andando5=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/andando6s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/andando6s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.andando6=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/andando7s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/andando7s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.andando7=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/andando8s.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/andando8s.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
 		this.andando8=icono.getImage();
 		
-		this.icono=new ImageIcon("resources/vidas.png");//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon("resources/vidas.png");//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);

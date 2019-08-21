@@ -151,7 +151,7 @@ public class Bolagrande {
 	public void setvy(int nvy){
 		this.vy=nvy;
 	}
-	public boolean colisionjugador(Jugador jugador){//Habrá que ver si colisionamos o no
+	public boolean colisionjugador(Jugador jugador){//Habra que ver si colisionamos o no
 		if (jugador!=null){
 				Rectangle rect1=new Rectangle (this.x,this.y,imagen.getWidth(null),imagen.getHeight(null));
 				Rectangle rect2=new Rectangle (jugador.getx(),jugador.gety(),jugador.getancho(),jugador.getalto());

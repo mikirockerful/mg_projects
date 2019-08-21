@@ -87,7 +87,7 @@ public class Dibujador extends JPanel {
 		
 	}
 	public void cargarimagen(String nombre){
-		this.icono=new ImageIcon(nombre);//Reescalado de la imagen mediante el getScaledInstance y creación de un nuevo icono y su correspondiente imagen.
+		this.icono=new ImageIcon(nombre);//Reescalado de la imagen mediante el getScaledInstance y creacion de un nuevo icono y su correspondiente imagen.
 		this.imagenprev=icono.getImage();
 		this.imagen = imagenprev.getScaledInstance(this.imagenprev.getWidth(null)*this.factor, this.imagenprev.getHeight(null)*this.factor,  java.awt.Image.SCALE_SMOOTH);
 		this.icono = new ImageIcon(imagen);
