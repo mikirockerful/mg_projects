@@ -10,4 +10,4 @@ El comando "selenium-side-runner" es la forma de ejecutar un archivo SIDE por li
 
 El archivo "dgt_madrid.side" corresponde a la solitud para "Trámites de oficina" en "Madrid", tal como está la página de la DGT en junio 2019. Se basa en comprobar que no existan ciertos elementos en el DOM del resultado, que son los que aparecen cuando se indica que no hay citas libres.
 
-El "send_gmail" está publicado en otro repo de mi GitHub, bien documentado.
+El "send_gmail" está publicado y documentado [aquí](https://github.com/mikirockerful/mg_projects/tree/master/gmail_sender).
